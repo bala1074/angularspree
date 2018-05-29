@@ -29,17 +29,9 @@ export class ProductCountComponent implements OnInit {
    * 
    * @memberof ProductcountComponent
    */
-  decreaseCount() {
-
-    if (this.count = 1) {
-      this.flag = true;
-
+  decreaseCount() {    this.count -= 1;
+    if(this.count <=1){
+      this.count = 1;
     }
-    if (this.count > 1) {
-      this.count -= 1;
-    }
-
-
   }
-
-}
+  }
